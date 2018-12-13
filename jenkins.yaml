@@ -34,7 +34,7 @@ tool:
   git:
     installations:
     - home: "git.exe"
-      name: "git-git"
+      name: "git-main"
   jdk:
     defaultProperties:
     - installSource:
