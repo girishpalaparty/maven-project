@@ -17,5 +17,8 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-    }
+    } 
+    options {
+     buildDiscarder(logRotator(numToKeepStr: '1'))
+    }  
 }
