@@ -19,6 +19,6 @@ pipeline {
         }
     } 
     options {
-     buildDiscarder(logRotator(daysToKeepStr: '2'))
+     buildDiscarder(logRotator(numToKeepStr: '3'))
     }  
 }
