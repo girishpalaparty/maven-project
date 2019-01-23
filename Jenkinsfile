@@ -1,4 +1,7 @@
 pipeline {
+    options {
+     buildDiscarder(logRotator(numToKeepStr: '3'))
+    } 
     agent any
     
 	stages {
@@ -18,7 +21,4 @@ pipeline {
             }
         }
     } 
-    options {
-     buildDiscarder(logRotator(numToKeepStr: '3'))
-    }  
 }
